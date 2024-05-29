@@ -5,10 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Kursach {
-    public interface IAddRemChanShow {
-        void Add() { }
-        void Remove() { }
-        void Change() { }
-        void Show_all() { }
+    public interface IPrinter {
+        void Print(string str) { }
+
+        string Read() { string? str = null; return str; }
     }
 }
